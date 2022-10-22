@@ -2,7 +2,7 @@ CREATE DATABASE pw_Hack;
 USE pw_Hack;
 CREATE TABLE TB_PERIODOS(
 Id int identity primary key not null,
-Nome varchar(50) not null,
+Nome varchar(50) not null
 );
 CREATE TABLE TB_CURSOS
 (
@@ -31,10 +31,10 @@ VALUES('Yumi',1);
 INSERT INTO TB_ALUNOS (Nome, CursoId)
 VALUES('Shibata',1);
 INSERT INTO TB_ALUNOS (Nome, CursoId)
-VALUES('Guilherme',1);(Nome, CursoId)
+VALUES('Guilherme',1);
 INSERT INTO TB_ALUNOS (Nome, CursoId)
 VALUES('Debora',1);
 
 SELECT a.Nome, c.Nome 
-FROM TB_ALUNOS a inner join TB_CURSOS
+FROM TB_ALUNOS a inner join TB_CURSOS c
 on a.CursoId = c.Id
